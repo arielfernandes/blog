@@ -1,4 +1,4 @@
-baseURL = "https://"
+baseURL = "http://arielf.ninja/"
 theme = "risotto"
 title = "Eax"
 author = "Ariel Fernandes"
