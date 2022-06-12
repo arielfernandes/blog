@@ -6,7 +6,7 @@ author = "Ariel Fernandes"
 
 **Olá!**
 
-Eu sou Ariel Fernandes!
+Eu sou, Ariel Fernandes!
 
 Uma pessoa motivada pelo conhecimento, entusiasta da programação, com interesse em sistemas operacionais e desenvolvimento back-end. 
 
