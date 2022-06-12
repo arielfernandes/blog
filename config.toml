@@ -41,10 +41,6 @@ icon = "fas fa-envelope"
 title = "Email"
 url = "mailto:0.arielfernandes.0@gmail.com"
 
-[[params.socialLinks]]
-icon = "ai ai-orcid"
-title = "ORCID"
-url = "https://orcid.org/0000-0001-2345-6789"
 
 [menu]
 
