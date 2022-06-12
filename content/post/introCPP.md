@@ -1,3 +1,7 @@
++++
+title = "Introdução ao C++"
+author = "Ariel Fernandes"
++++
 [<img width=200 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png">]()
 
 # Introdução ao C++
