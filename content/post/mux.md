@@ -9,10 +9,12 @@ bookCollapseSection = true
 +++
 # Multiplexador (mux)
 
-Possui M entradas de dados e uma saída (Mx1), permitindo que apenas uma das entradas seja passadas para a saída.
-Pode ser chamado de seletor, pois seleciona uma das entradas para ser passada para à saída.
+Possui M entradas de dados e uma saída (Mx1), permitindo que apenas uma das entradas seja passada para a saída.
+Pode ser chamado de seletor, pois seleciona uma das entradas para à saída.
 
 Multiplexador produz um 1 ou um 0 na saída, dependendo de se a entrada selecionada tem um 1 ou 0.
+
+![](https://raw.githubusercontent.com/arielfernandes/blog/main/resources/_gen/images/mux/selSaida.png)
 
 # Multiplexador 2x1
 Tem duas entradas de dados i1 e i0, uma entrada de seleção s0 e uma saída de dados d.
