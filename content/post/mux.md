@@ -17,7 +17,7 @@ Multiplexador produz um 1 ou um 0 na saída, dependendo de se a entrada selecion
 # Multiplexador 2x1
 Tem duas entradas de dados i1 e i0, uma entrada de seleção s0 e uma saída de dados d.
 
-![](resources/_gen/images/mux/mux2x1.png)
+![](https://raw.githubusercontent.com/arielfernandes/blog/main/resources/_gen/images/mux/mux2x1.png)
 
 # Multiplexador 4x1
 
@@ -32,7 +32,7 @@ Para saber o número de seleções é ncessário aplicar log2(x), assim você te
 
 Para 4x1, aplicar log2(4) = 2, ou seja este possui duas seleções.
 
-![](resources/_gen/images/mux/mux4x1.png)
+![](https://raw.githubusercontent.com/arielfernandes/blog/main/resources/_gen/images/mux/mux4x1.png)
 
 
 # Multiplexador Mx1 de N bits
@@ -44,7 +44,7 @@ Um conjunto de entradas A pode consistir em quatros bits, a3, a2, a1 e a0, em ou
 Conduzindo o conjunto em uma saída de 4 bits c.
 
 
-![](resources/_gen/images/mux/mux4bitsc.png)
+![](https://raw.githubusercontent.com/arielfernandes/blog/main/resources/_gen/images/mux/mux4bitsc.png)
 
 ---
 Conteúdo retirado do livro Sistemas Digitais, por Frank Vahid.
