@@ -1,4 +1,12 @@
-
++++
+title = "Multiplexadores"
+author = "Ariel Fernandes"
+date = "2022-09-29"
+draft = false
+tags = ["mux"]
+type = "posts"
+bookCollapseSection = true
++++
 # Multiplexador (mux)
 
 Possui M entradas de dados e uma saída (Mx1), permitindo que apenas e 1 das entradas seja passadas para a saída.
