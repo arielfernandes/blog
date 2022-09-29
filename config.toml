@@ -15,7 +15,6 @@ ignoreErrors = ["error-remote-getjson"]
 sectionPagesMenu = "main"
 
 [params]
-
 [params.theme]
 palette = "gruvbox-dark"
 mode = "dark-mode"
@@ -25,6 +24,8 @@ mode = "dark-mode"
 title = "risotto"
 description = "A [hugo](https://gohugo.io) theme inspired by terminal ricing."
 logo = "images/rice.svg"
+
+
 
 # Sidebar: social links
 # Available icon sets:

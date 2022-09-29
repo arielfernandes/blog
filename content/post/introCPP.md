@@ -3,6 +3,8 @@ title = "Introdução ao C++"
 author = "Ariel Fernandes"
 date = "2022-06-12"
 draft = false
+tags = ["introcpp"]
+type = "posts"
 bookCollapseSection = true
 +++
 [<img width=200 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png">]()
