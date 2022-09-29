@@ -7,7 +7,6 @@ tags = ["mux"]
 type = "posts"
 bookCollapseSection = true
 +++
-# Multiplexador (mux)
 
 Possui M entradas de dados e uma saída (Mx1), permitindo que apenas uma das entradas seja passada para a saída.
 Pode ser chamado de seletor, pois seleciona uma das entradas para à saída.
@@ -30,7 +29,7 @@ possui.
 
 Ex:. 4x1
 
-Para saber o número de seleções é ncessário aplicar log2(x), assim você terá a quantidade de seleção.
+Para saber o número de seleções é necessário aplicar log2(x), assim você terá a quantidade de seleção.
 
 Para 4x1, aplicar log2(4) = 2, ou seja este possui duas seleções.
 
