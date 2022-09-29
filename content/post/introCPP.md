@@ -11,7 +11,7 @@ bookCollapseSection = true
 
 #### Estrutura básica
 
-Para iniciarmos um progrma em c++, precisamos importar algumas bibliotecas
+Para iniciarmos um programa em c++, precisamos importar algumas bibliotecas
 padrão da linguagem, normalmente quando usamos alguma IDE de programação, quando
 criamos o arquivo .cpp direto pela IDE, ela por definição trás essa estrutura.
 Mas como vamos iniciar do zero, irei explicar como criar essa estrutura,
