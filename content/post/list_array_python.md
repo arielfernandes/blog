@@ -9,9 +9,8 @@ bookCollapseSection = true
 +++
 
 
-# Introdução a listas e arrays em Python
-
 ### Lista
+
 Listas são estruturas mutáveis, o que significa que é possível substituir, inserir ou remover elementos contidos nelas. No entanto, é importante destacar que as listas retornadas pelos operadores de fatia e concatenação são novas listas e não partes da lista original.
 
 O tipo "list" inclui vários métodos chamados mutadores, cujo objetivo é modificar a estrutura de uma lista. Entre os métodos mais utilizados estão o "append", "insert", "pop", "remove" e "sort".
