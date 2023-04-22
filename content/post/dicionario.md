@@ -8,8 +8,6 @@ type = "posts"
 bookCollapseSection = true
 +++
 
-# Utilizando dicionários em Python: uma alternativa ao switch case.
-
 Em Python, um dicionário é uma coleção de pares chave-valor, onde cada chave é única e mapeia para um valor específico. É semelhante a uma tabela hash em outras linguagens de programação.
 
 Uma vantagem de se utilizar dicionários em Python é que eles permitem a busca e acesso aos valores armazenados de forma rápida e eficiente, em comparação com o uso de estruturas de controle como o switch case.
