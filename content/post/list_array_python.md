@@ -1,6 +1,17 @@
-# Lista e Array - Python
++++
+title = "Introdução a listas e arrays em Python"
+author = "Ariel Fernandes"
+date = "2023-04-12"
+draft = false
+tags = ["lista_array_python"]
+type = "posts"
+bookCollapseSection = true
++++
 
-# Lista
+
+# Introdução a listas e arrays em Python
+
+### Lista
 Listas são estruturas mutáveis, o que significa que é possível substituir, inserir ou remover elementos contidos nelas. No entanto, é importante destacar que as listas retornadas pelos operadores de fatia e concatenação são novas listas e não partes da lista original.
 
 O tipo "list" inclui vários métodos chamados mutadores, cujo objetivo é modificar a estrutura de uma lista. Entre os métodos mais utilizados estão o "append", "insert", "pop", "remove" e "sort".
@@ -63,7 +74,7 @@ com varios tipos, e formas de manipulação.
 
 Vale lembrar que esses métodos são muito flexíveis e podem ser utilizados de diversas formas para manipular textos em Python.
 
-# Array
+### Array
 
 O array é uma estrutura de dados que representa uma sequência de itens acessíveis ou substituíveis em posições de índice específicas. Ao contrário das listas, o array tem um comprimento fixo quando é criado e não permite adicionar ou remover posições. A estrutura subjacente de uma lista Python é um array, que permite acesso e substituição de itens em posições específicas e também examinar seu comprimento e obter sua representação em string.
 
