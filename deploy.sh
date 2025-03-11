@@ -3,5 +3,4 @@ git submodule update
 git submodule sync
 hugo -D
 
-ls themes/risotto/
-
+ls themes/hugo-book
