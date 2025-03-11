@@ -1,0 +1,177 @@
+<!doctype html><html lang=en dir=ltr><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+
+  Estrutura básica
+  #
+
+Para iniciarmos um programa em c++, precisamos importar algumas bibliotecas
+padrão da linguagem, normalmente quando usamos alguma IDE de programação, quando
+criamos o arquivo .cpp direto pela IDE, ela por definição trás essa estrutura.
+Mas como vamos iniciar do zero, irei explicar como criar essa estrutura,
+explicando cada item.
+
+  Primeiro passo
+  #
+
+Vamos iniciar nosso programa criando um arquivo de texto, com a extenção .cpp, vamos dar o nome para nosso arquivo de primeiroCodigo.cpp, seu arquivo não deve conter espaço entre as palavras e nem acentuação, por definicição e boas práticas iremos evitar esse tipo de escrita para nossos programas."><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="http://localhost:1313/post/introcpp/"><meta property="og:site_name" content="Ariel Fernandes"><meta property="og:title" content="Introdução ao C++"><meta property="og:description" content="Estrutura básica # Para iniciarmos um programa em c++, precisamos importar algumas bibliotecas padrão da linguagem, normalmente quando usamos alguma IDE de programação, quando criamos o arquivo .cpp direto pela IDE, ela por definição trás essa estrutura. Mas como vamos iniciar do zero, irei explicar como criar essa estrutura, explicando cada item.
+Primeiro passo # Vamos iniciar nosso programa criando um arquivo de texto, com a extenção .cpp, vamos dar o nome para nosso arquivo de primeiroCodigo.cpp, seu arquivo não deve conter espaço entre as palavras e nem acentuação, por definicição e boas práticas iremos evitar esse tipo de escrita para nossos programas."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="post"><meta property="article:published_time" content="2022-06-12T00:00:00+00:00"><meta property="article:modified_time" content="2022-06-12T00:00:00+00:00"><meta property="article:tag" content="Introcpp"><title>Introdução ao C++ | Ariel Fernandes</title>
+<link rel=icon href=/favicon.png><link rel=manifest href=/manifest.json><link rel=canonical href=http://localhost:1313/post/introcpp/><link rel=stylesheet href=/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin=anonymous><script defer src=/fuse.min.js></script><script defer src=/pt-br.search.min.ba42dc6b24f46f37d6889afae911d06ffde25bedf39aabfb789498c5eca32f4f.js integrity="sha256-ukLcayT0bzfWiJr66RHQb/3iW+3zmqv7eJSYxeyjL08=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>Ariel Fernandes</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder aria-label maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label><h3>Introdução ao C++</h3><label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><ul><li></li></ul></li></ul><ul><li><ul><li></li></ul></li></ul><ul><li><ul><li></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2>Introdução ao C++</h2><div class="flex align-center text-small book-post-date"><img src=/svg/calendar.svg class=book-icon alt>
+<span>junho 12, 2022</span></div><div class=text-small><a href=/tags/introcpp/>Introcpp</a></div><div class=book-post-content><p><a href><img width=200 src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png></a></p><h4 id=estrutura-básica>Estrutura básica
+<a class=anchor href=#estrutura-b%c3%a1sica>#</a></h4><p>Para iniciarmos um programa em c++, precisamos importar algumas bibliotecas
+padrão da linguagem, normalmente quando usamos alguma IDE de programação, quando
+criamos o arquivo .cpp direto pela IDE, ela por definição trás essa estrutura.
+Mas como vamos iniciar do zero, irei explicar como criar essa estrutura,
+explicando cada item.</p><h1 id=primeiro-passo>Primeiro passo
+<a class=anchor href=#primeiro-passo>#</a></h1><p>Vamos iniciar nosso programa criando um arquivo de texto, com a extenção .cpp, vamos dar o nome para nosso arquivo de primeiroCodigo.cpp, seu arquivo não deve conter espaço entre as palavras e nem acentuação, por definicição e boas práticas iremos evitar esse tipo de escrita para nossos programas.</p><p>Após criar o arquivo, abra ele com um editor de texto de sua preferência, eu irei usar o vim para essa introdução, sinta-se a vontade para escolher qualquer editor.</p><p>Feito a criação e a abertura do nosso arquivo, o primeiro passo é importar algumas biblioteacas para o funcionamento do código.</p><p>A primeira coisa que precisamos importar ao código é biblioteca <strong>iostream</strong>, ela é muito importante para o funcionamento do do nosso programa em c++, é a base para tudo que iremos fazer daqui pra frente.</p><p>Para importamos a biblioteca iremos utilizar o comando <strong>#include</strong>, no qual faz a importação das bibliotecas dentro do nosso sistema, seu código deverá ficar assim:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;iostream&gt;</span><span style=color:#75715e>
+</span></span></span></code></pre></div><p>Você pode estar se perguntando o que seria esse tal de <strong>iostream</strong>, ele nada mais é do que um gerenciador de entrada e saída do seu programa (<strong>I</strong>|<strong>O</strong>), é com ele que podemos fazer todo o gerenciamento, de forma &ldquo;automatica&rdquo;, do nosso programa, como por exemplo, uma saida de texto para o usuário informando uma mensagem de &ldquo;olá&rdquo;. Claro que não se limita só a isso, mas sua principal função é garantir essa interação de usuário e máquina, caso contrário seu programa nunca irá funcionar.</p><p>Após a importação da nosso biblioteca de entra e saída (<strong>iostream</strong>), vamos fazer mais uma inclusão ao código, agora iremos definir o uso de uma biblioteca, que é a <strong>std</strong> (Standar Template Library), é uma bibliotexa padronizada de funções, que oferece ao desenvolver um conjunto de classes de uso genérico, facilitando o desenvolvimento.</p><h4 id=por-exemplo>Por exemplo
+<a class=anchor href=#por-exemplo>#</a></h4><p>Sem essa biblioteca, um código simples de saída ficaria assim:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span>std<span style=color:#f92672>::</span>cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Olá Mundo!&#34;</span>;
+</span></span></code></pre></div><p>Agora utilizando a biblioteca, podemos reduzir nossa escrita:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span>
+</span></span><span style=display:flex><span>cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Olá Mundo!&#34;</span>;
+</span></span></code></pre></div><p>Dessa forma, conseguirmos diminuir as chances de erros no programa, já que não precisaremos fazer essa inclusões, que se tornam chatas ao longo do tempo.</p><p>Agora que já expliquei um pouco sobre sua importância, vamos adiciona-lá ao código.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;iostream&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> std;
+</span></span></code></pre></div><p>Feita essas inclusões, vamos agora iniciar o programa, para isso iremos criar uma função chamada <strong>main</strong>, do tipo inteiro, pois precisamos sempres retornar algo ao sistema, e nesse caso por padrão o programa deve conter essa estrutura. O <strong>main</strong> é a principal parte do seu sistema, para desenvolvermos qualquer aplicação, sempre necessitaremos iniciá-lo, caso isso não seja feito, seu programa não irá funcionar, pois não existe nenhuma referência de instancimento, onde sua estrutura deve começar e terminar.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;iostream&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> std;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Lembre-se que essa função precisa retornar alguma coisa, então vamos adicionar um <strong>return</strong> no código, essa resposta será zero (return 0):</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;iostream&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> std;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Pronto, agora você já sabe qual é a estrutura básica de um programa em
+<em><strong>c++</strong></em>. Se você estiver utilizando linux, porderá rodar o código direto pelo
+terminal usando o seguindo comando:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>g++ -o nome_para_o_arquivo nome_do_arquivo.cpp
+</span></span></code></pre></div><p>O nome_para_o_arquivo é o programa que será criado para ser executado, já o nome_do_arquivo.cpp
+é o seu código.</p><p>Depois é só executar usando:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>./nome_para_o_arquivo
+</span></span></code></pre></div><p>Se você fizer esse procedimento com o arquivo criado nessa introdução,
+provavelmente não aparecer nenhuma saída, pois não há nada para ser feito.
+Apenas estruturamos o projeto no formato de programação em <em><strong>c++</strong></em>.</p><h1 id=variáveis>Variáveis
+<a class=anchor href=#vari%c3%a1veis>#</a></h1><p>Uma variável é um espaço separado pelo sistema dentro da memória <strong>RAM</strong>, esse
+espaço é temporário, já que fica alocado nessa parte do hardware. Para termos
+acesso a essas variáveis precisamos sempre indica-lás dentro do nosso código, o
+nome e o tipo dela.</p><p>Como na maioria das linguagens o <em><strong>cpp</strong></em> também contém suas formas de
+armazenamento de informações.</p><h4 id=os-tipos-de-variáveis-em-c>Os tipos de variáveis em c++
+<a class=anchor href=#os-tipos-de-vari%c3%a1veis-em-c>#</a></h4><table><thead><tr><th>Tipo</th><th>Tamanho</th></tr></thead><tbody><tr><td>int (16bits)</td><td>2 bytes</td></tr><tr><td>int (32bits)</td><td>4 bytes</td></tr><tr><td>char</td><td>1 byte (caracteres)</td></tr><tr><td>double</td><td>8 bytes</td></tr><tr><td>float</td><td>4 bytes</td></tr><tr><td>bool</td><td>1 byte (true/false)</td></tr><tr><td>unsigned shirt int</td><td>2 bytes</td></tr><tr><td>short int</td><td>2 bytes</td></tr><tr><td>unsigned long int</td><td>4 bytes</td></tr><tr><td>long int</td><td>4 bytes</td></tr><tr><td>unsigned int (16 bits)</td><td>4 bytes</td></tr><tr><td>string</td><td>variável (texto)</td></tr></tbody></table><p>As variáveis mais comuns de se utilizar quando se inicia em programação, são:</p><ul><li><em><strong>int</strong></em> - inteiro<ul><li>armazena valores como, 1, 2, 55 e assim por diante (ou seja somente números).</li></ul></li><li><em><strong>char</strong></em> - caracteres<ul><li>armazena valores como, a, b, c, e assim por diante (ou seja somente letras).</li></ul></li><li><em><strong>float</strong></em> - decimal<ul><li>armazena valores como, 1.2, 2.2, 25.510 e assim por diante (ou seja números com casas decimais).</li></ul></li><li><em><strong>double</strong></em> - decimal<ul><li>Muito parecido com o float, mas possui uma diferença bem importante, o double irá armazenar
+valores com mais precisão, se tivermos algum valor que seu resultado seja 4,9999999999, o
+float irá aproximar o valor, ficando 4.5, já double tenta manter o valor mais proximo
+ao calculado.</li></ul></li><li><em><strong>string</strong></em> - Textos<ul><li>armazena valores como, nomes, textos, etc&mldr;</li></ul></li></ul><p>Agora que já vimos os tipos de variáveis, vamos criar um código para exemplificar o uso de algumas delas.<br>Para isso crie um novo programa <em><strong>cpp</strong></em>, irei chamar o meu de <em><strong>variaveis.cpp</strong></em>, após criar o arquivo, iremos adicionar alguns tipos de variáveis:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;iostream&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> std;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>int</span> inteiro;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>char</span> letra;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>double</span> decimal;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>float</span> decimal2;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>bool</span> verdadeiro_false;
+</span></span><span style=display:flex><span>	string texto;
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Feito isto, agora precisamos informar um valor padrão, caso não façamos isso,
+sua variável tem o risco de ser iniciada com valores aleátorios, prejudicando seu
+desenvolvimento, baśicamente irá iniciar com &ldquo;LIXO&rdquo; de memória, para evitarmos
+alguns erros, iremos sempre indicar um valor padrão:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;iostream&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> std;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>int</span> inteiro <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>char</span> letra <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;c&#39;</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>double</span> decimal <span style=color:#f92672>=</span> <span style=color:#ae81ff>5.2</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>float</span> decimal2 <span style=color:#f92672>=</span> <span style=color:#ae81ff>5.2</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>bool</span> verdadeiro <span style=color:#f92672>=</span> true;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>bool</span> falso <span style=color:#f92672>=</span> false;
+</span></span><span style=display:flex><span>	string texto <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Programação em cpp&#34;</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>A saída deverá sair parecida:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span> c
+</span></span><span style=display:flex><span> 5.2
+</span></span><span style=display:flex><span> 5.2
+</span></span><span style=display:flex><span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span> Programação
+</span></span></code></pre></div><p>Já que informamos os tipos, nomes e valores, vamos imprimir isso para vermos o
+que irá aparecer. Para imprimir alguma saída precisamos usar o comando
+<em><strong>cout</strong></em>, como foi utilizado anteriormente, tente fazer sozinho, para ver o
+resultado.</p><p>Se você conseguiu, vamos continuar.</p><p>Você deve ter percebido que o valor booleano (bool) foi imprimido na tela com o
+digíto um. Isso porque, <em><strong>true</strong></em> corresponde a um, e <em><strong>false</strong></em> a zero.</p><h1 id=recebendo-valores-digitados-pelo-usuário>Recebendo valores digitados pelo usuário
+<a class=anchor href=#recebendo-valores-digitados-pelo-usu%c3%a1rio>#</a></h1><p>Agora iremos receber algumas informaçãoes digitadas pelo usuário, será algo
+simples, mas muito importante para podermos desenvolver aplicações mais
+complexas futuramente.</p><p>Vamos criar um sistema que solicitará ao usuário, nome, idade, peso e altura.</p><p>Utilizando os tipos de variáveis:</p><blockquote><p><em><strong>nome</strong></em> vai ser do tipo string<br><em><strong>idade</strong></em> vai ser do tipo inteiro<br><em><strong>peso</strong></em> vai ser do tipo float<br><em><strong>altura</strong></em> vai ser do tipo float<br>Obs: Comando de entrada</p><ul><li>cout &#171; &ldquo;Imprime uma mensagem ao usuário&rdquo;;</li><li>cin &#187; Recebe mensagem do usuário;</li></ul></blockquote><p>Agora que determinamos os tipos de variáveis que utilizaremos, vamos iniciar o
+desenvolvimento, crie seu programa e mão na massa.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;iostream&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> std;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>	string nome;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>int</span> idade <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>float</span> peso <span style=color:#f92672>=</span> <span style=color:#ae81ff>0.0</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>float</span> altura <span style=color:#f92672>=</span> <span style=color:#ae81ff>0.0</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>//Agora vamos criar a interção com o usuário
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Digite seu nome: &#34;</span>;
+</span></span><span style=display:flex><span>	cin <span style=color:#f92672>&gt;&gt;</span> nome;
+</span></span><span style=display:flex><span>	cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Digite sua idade: &#34;</span>;
+</span></span><span style=display:flex><span>	cin <span style=color:#f92672>&gt;&gt;</span> idade;
+</span></span><span style=display:flex><span>	cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Digite seu peso: &#34;</span>;
+</span></span><span style=display:flex><span>	cin <span style=color:#f92672>&gt;&gt;</span> peso;
+</span></span><span style=display:flex><span>	cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Digite sua altura: &#34;</span>;
+</span></span><span style=display:flex><span>	cin <span style=color:#f92672>&gt;&gt;</span> altura;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Já coletamos as informações, agora vamos mostrar elas ao usuário.
+Ainda dentro do seu programa, após toda a coleta de dados, vamos adicionar a
+saída.</p><p>Vamos concatenar as variáveis numa mensagem, é simples, para realizar esse
+procedimento é necessario utilizarmos no <em><strong>cout</strong></em> nosso comando de saída, o
+simbolo <em><strong>&#171;</strong></em> após a sua resposta, ficará assim:</p><blockquote><p>cout &#171; &ldquo;Sua mensagem aqui " &#171; variável aqui &#171; endl;<br></p></blockquote><p>O <em><strong>endl</strong></em> é um comando de quebra de linha, você pode utilizar aspas duplas
+barra n (<strong>\n</strong>) no lugar dele, terá o mesmo efeito, ou apenas utilizar aspas duplas (&rdquo; &ldquo;), porém apenas fechará o código.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//mostrando os valores inserido ao usuário
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Nome: &#34;</span> <span style=color:#f92672>&lt;&lt;</span> nome <span style=color:#f92672>&lt;&lt;</span> endl;
+</span></span><span style=display:flex><span>cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Idade: &#34;</span> <span style=color:#f92672>&lt;&lt;</span> idade <span style=color:#f92672>&lt;&lt;</span> endl;
+</span></span><span style=display:flex><span>cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Peso: &#34;</span> <span style=color:#f92672>&lt;&lt;</span> peso <span style=color:#f92672>&lt;&lt;</span> endl;
+</span></span><span style=display:flex><span>cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Altura: &#34;</span> <span style=color:#f92672>&lt;&lt;</span> altura <span style=color:#f92672>&lt;&lt;</span> endl;
+</span></span></code></pre></div><p>Só rodar o seu código, e você verá as mensagens na sua tela.</p><p>O código completo deve ficar assim:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;iostream&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> std;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>	string nome;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>int</span> idade <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>float</span> peso <span style=color:#f92672>=</span> <span style=color:#ae81ff>0.0</span>;
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>float</span> altura <span style=color:#f92672>=</span> <span style=color:#ae81ff>0.0</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>//Agora vamos criar a interção com o usuário
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Digite seu nome: &#34;</span>;
+</span></span><span style=display:flex><span>	cin <span style=color:#f92672>&gt;&gt;</span> nome;
+</span></span><span style=display:flex><span>	cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Digite sua idade: &#34;</span>;
+</span></span><span style=display:flex><span>	cin <span style=color:#f92672>&gt;&gt;</span> idade;
+</span></span><span style=display:flex><span>	cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Digite seu peso: &#34;</span>;
+</span></span><span style=display:flex><span>	cin <span style=color:#f92672>&gt;&gt;</span> peso;
+</span></span><span style=display:flex><span>	cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Digite sua altura: &#34;</span>;
+</span></span><span style=display:flex><span>	cin <span style=color:#f92672>&gt;&gt;</span> altura;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#75715e>//mostrando os valores inserido ao usuário
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>	cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Nome: &#34;</span> <span style=color:#f92672>&lt;&lt;</span> nome <span style=color:#f92672>&lt;&lt;</span> endl;
+</span></span><span style=display:flex><span>	cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Idade: &#34;</span> <span style=color:#f92672>&lt;&lt;</span> idade <span style=color:#f92672>&lt;&lt;</span> endl;
+</span></span><span style=display:flex><span>	cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Peso: &#34;</span> <span style=color:#f92672>&lt;&lt;</span> peso <span style=color:#f92672>&lt;&lt;</span> endl;
+</span></span><span style=display:flex><span>	cout <span style=color:#f92672>&lt;&lt;</span> <span style=color:#e6db74>&#34;Altura: &#34;</span> <span style=color:#f92672>&lt;&lt;</span> altura <span style=color:#f92672>&lt;&lt;</span> endl;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><ul><li></li></ul></li></ul><ul><li><ul><li></li></ul></li></ul><ul><li><ul><li></li></ul></li></ul></nav></div></aside></main></body></html>
