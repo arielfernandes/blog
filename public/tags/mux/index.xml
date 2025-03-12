@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mux on Ariel Fernandes</title><link>http://localhost:1313/tags/mux/</link><description>Recent content in Mux on Ariel Fernandes</description><generator>Hugo</generator><language>en</language><copyright>© 2022 Ariel Fernandes</copyright><lastBuildDate>Thu, 29 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/mux/index.xml" rel="self" type="application/rss+xml"/><item><title>Multiplexadores</title><link>http://localhost:1313/post/mux/</link><pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate><guid>http://localhost:1313/post/mux/</guid><description>&lt;p>Possui M entradas de dados e uma saída (Mx1), permitindo que apenas uma das entradas seja passada para a saída.
-Pode ser chamado de seletor, pois seleciona uma das entradas para à saída.&lt;/p>
-&lt;p>Multiplexador produz um 1 ou um 0 na saída, dependendo de se a entrada selecionada tem um 1 ou 0.&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/arielfernandes/blog/main/resources/_gen/images/mux/selSaida.png" alt="" />&lt;/p>
-&lt;h1 id="multiplexador-2x1">
- Multiplexador 2x1
- &lt;a class="anchor" href="#multiplexador-2x1">#&lt;/a>
-&lt;/h1>
-&lt;p>Tem duas entradas de dados i1 e i0, uma entrada de seleção s0 e uma saída de dados d.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mux on Ariel Fernandes</title>
+    <link>http://localhost:1313/tags/mux/</link>
+    <description>Recent content in Mux on Ariel Fernandes</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multiplexadores</title>
+      <link>http://localhost:1313/posts/mux/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/mux/</guid>
+      <description>&lt;p&gt;Possui M entradas de dados e uma saída (Mx1), permitindo que apenas uma das entradas seja passada para a saída.&#xA;Pode ser chamado de seletor, pois seleciona uma das entradas para à saída.&lt;/p&gt;&#xA;&lt;p&gt;Multiplexador produz um 1 ou um 0 na saída, dependendo de se a entrada selecionada tem um 1 ou 0.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;https://raw.githubusercontent.com/arielfernandes/blog/main/resources/_gen/images/mux/selSaida.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;multiplexador-2x1&#34;&gt;&#xA;  Multiplexador 2x1&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#multiplexador-2x1&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Tem duas entradas de dados i1 e i0, uma entrada de seleção s0 e uma saída de dados d.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

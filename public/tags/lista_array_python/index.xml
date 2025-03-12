@@ -1,6 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lista_array_python on Ariel Fernandes</title><link>http://localhost:1313/tags/lista_array_python/</link><description>Recent content in Lista_array_python on Ariel Fernandes</description><generator>Hugo</generator><language>en</language><copyright>© 2022 Ariel Fernandes</copyright><lastBuildDate>Wed, 12 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/lista_array_python/index.xml" rel="self" type="application/rss+xml"/><item><title>Introdução a listas e arrays em Python</title><link>http://localhost:1313/post/list_array_python/</link><pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate><guid>http://localhost:1313/post/list_array_python/</guid><description>&lt;h3 id="lista">
- Lista
- &lt;a class="anchor" href="#lista">#&lt;/a>
-&lt;/h3>
-&lt;p>Listas são estruturas mutáveis, o que significa que é possível substituir, inserir ou remover elementos contidos nelas. No entanto, é importante destacar que as listas retornadas pelos operadores de fatia e concatenação são novas listas e não partes da lista original.&lt;/p>
-&lt;p>O tipo &amp;ldquo;list&amp;rdquo; inclui vários métodos chamados mutadores, cujo objetivo é modificar a estrutura de uma lista. Entre os métodos mais utilizados estão o &amp;ldquo;append&amp;rdquo;, &amp;ldquo;insert&amp;rdquo;, &amp;ldquo;pop&amp;rdquo;, &amp;ldquo;remove&amp;rdquo; e &amp;ldquo;sort&amp;rdquo;.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lista_array_python on Ariel Fernandes</title>
+    <link>http://localhost:1313/tags/lista_array_python/</link>
+    <description>Recent content in Lista_array_python on Ariel Fernandes</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 12 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/lista_array_python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introdução a listas e arrays em Python</title>
+      <link>http://localhost:1313/posts/list_array_python/</link>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/list_array_python/</guid>
+      <description>&lt;h3 id=&#34;lista&#34;&gt;&#xA;  Lista&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#lista&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Listas são estruturas mutáveis, o que significa que é possível substituir, inserir ou remover elementos contidos nelas. No entanto, é importante destacar que as listas retornadas pelos operadores de fatia e concatenação são novas listas e não partes da lista original.&lt;/p&gt;&#xA;&lt;p&gt;O tipo &amp;ldquo;list&amp;rdquo; inclui vários métodos chamados mutadores, cujo objetivo é modificar a estrutura de uma lista. Entre os métodos mais utilizados estão o &amp;ldquo;append&amp;rdquo;, &amp;ldquo;insert&amp;rdquo;, &amp;ldquo;pop&amp;rdquo;, &amp;ldquo;remove&amp;rdquo; e &amp;ldquo;sort&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
