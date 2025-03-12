@@ -1,12 +1,11 @@
-+++
-title = "Multiplexadores"
-author = "Ariel Fernandes"
-date = "2022-09-29"
-draft = false
-tags = ["mux"]
-type = "posts"
-bookCollapseSection = true
-+++
+---
+title : Multiplexadores
+author : Ariel Fernandes
+date : 2022-09-29
+draft : false
+tags : ["mux"]
+type : "posts"
+---
 
 Possui M entradas de dados e uma saída (Mx1), permitindo que apenas uma das entradas seja passada para a saída.
 Pode ser chamado de seletor, pois seleciona uma das entradas para à saída.

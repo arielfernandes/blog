@@ -1,12 +1,11 @@
-+++
-title = "Introdução ao C++"
-author = "Ariel Fernandes"
-date = "2022-06-12"
-draft = false
-tags = ["introcpp"]
-type = "posts"
-bookCollapseSection = true
-+++
+---
+title : Introdução ao C++
+author : Ariel Fernandes
+date : 2022-06-12
+draft : false
+tags : ["introcpp"]
+type : posts
+---
 [<img width=200 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png">]()
 
 #### Estrutura básica
@@ -24,7 +23,7 @@ Após criar o arquivo, abra ele com um editor de texto de sua preferência, eu i
 
 Feito a criação e a abertura do nosso arquivo, o primeiro passo é importar algumas biblioteacas para o funcionamento do código.
 
-A primeira coisa que precisamos importar ao código é biblioteca **iostream**, ela é muito importante para o funcionamento do do nosso programa em c++, é a base para tudo que iremos fazer daqui pra frente.
+A primeira coisa que precisamos importar ao código é biblioteca **iostream**, ela é muito importante para o funcionamento do nosso programa em c++, é a base para tudo que iremos fazer daqui pra frente.
 
 Para importamos a biblioteca iremos utilizar o comando **#include**, no qual faz a importação das bibliotecas dentro do nosso sistema, seu código deverá ficar assim:
 

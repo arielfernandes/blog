@@ -1,12 +1,11 @@
-+++
-title = "Utilizando dicionários em Python: uma alternativa ao switch case."
-author = "Ariel Fernandes"
-date = "2022-09-29"
-draft = false
-tags = ["Dict"]
-type = "posts"
-bookCollapseSection = true
-+++
+---
+title: "Utilizando dicionários em Python: uma alternativa ao switch case."
+author: Ariel Fernandes
+date: 2022-09-29
+draft: false
+tags: ["Dict"]
+type: "posts"
+---
 
 Em Python, um dicionário é uma coleção de pares chave-valor, onde cada chave é única e mapeia para um valor específico. É semelhante a uma tabela hash em outras linguagens de programação.
 

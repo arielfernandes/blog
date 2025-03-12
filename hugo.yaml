@@ -21,19 +21,21 @@ markup:
 # There are different options to translate files
 # See https://gohugo.io/content-management/multilingual/#translation-by-filename
 # And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
-languages:
-  pt:
-    languageName: Portuguese
-    contentDir: content.pt
-    weight: 1
+#languages:
+#  pt:
+#    languageName: Portuguese
+#    contentDir: content.pt
+#    weight: 1
 
-  en:
-   languageName: English
-   contentDir: content.en
-   weight: 2
+#  en:
+#   languageName: English
+#   contentDir: content.en
+#   weight: 2
 
 menu:
-  # before: []
+  before:
+  - name: Posts
+    url: /posts
   after:
     - name: "Github"
       url: "https://github.com/arielfernandes"
@@ -65,7 +67,7 @@ params:
   # (Optional, default docs) Specify root page to render child pages as menu.
   # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
   # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
-  BookSection: docs
+  # BookSection: docs
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.

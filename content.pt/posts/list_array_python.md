@@ -1,12 +1,11 @@
-+++
-title = "Introdução a listas e arrays em Python"
-author = "Ariel Fernandes"
-date = "2023-04-12"
-draft = false
-tags = ["lista_array_python"]
-type = "posts"
-bookCollapseSection = true
-+++
+---
+title : Introdução a listas e arrays em Python
+author : Ariel Fernandes
+date : 2023-04-12
+draft : false
+tags : ["lista_array_python"]
+type : "posts"
+---
 
 
 ### Lista
