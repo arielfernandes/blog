@@ -1,6 +1,7 @@
 git submodule init
 git submodule update
 git submodule sync
-hugo -D
+
+hugo --gc --minify
 
 ls themes/hugo-book
