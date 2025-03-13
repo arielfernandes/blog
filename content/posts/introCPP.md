@@ -1,247 +1,219 @@
 ---
-title : Introdução ao C++
-author : Ariel Fernandes
-date : 2022-06-12
-draft : false
-tags : ["introcpp"]
-type : posts
+title: Introdução ao C++
+author: Ariel Fernandes
+date: 2022-06-12
+draft: false
+tags: ["introcpp"]
+type: posts
 ---
+
 [<img width=200 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png">]()
 
-#### Estrutura básica
+---
 
-Para iniciarmos um programa em c++, precisamos importar algumas bibliotecas
-padrão da linguagem, normalmente quando usamos alguma IDE de programação, quando
-criamos o arquivo .cpp direto pela IDE, ela por definição trás essa estrutura.
-Mas como vamos iniciar do zero, irei explicar como criar essa estrutura,
-explicando cada item.
+# Estrutura Básica
 
-# Primeiro passo
-Vamos iniciar nosso programa criando um arquivo de texto, com a extenção .cpp, vamos dar o nome para nosso arquivo de primeiroCodigo.cpp, seu arquivo não deve conter espaço entre as palavras e nem acentuação, por definicição e boas práticas iremos evitar esse tipo de escrita para nossos programas.
+Para iniciarmos um programa em C++, precisamos importar algumas bibliotecas padrão da linguagem. Normalmente, quando usamos uma IDE de programação, ao criar o arquivo `.cpp` diretamente pela IDE, ela já traz essa estrutura por padrão. No entanto, como vamos iniciar do zero, explicarei como criar essa estrutura, detalhando cada item.
 
-Após criar o arquivo, abra ele com um editor de texto de sua preferência, eu irei usar o vim para essa introdução, sinta-se a vontade para escolher qualquer editor.
+---
 
-Feito a criação e a abertura do nosso arquivo, o primeiro passo é importar algumas biblioteacas para o funcionamento do código.
+## Primeiro Passo
 
-A primeira coisa que precisamos importar ao código é biblioteca **iostream**, ela é muito importante para o funcionamento do nosso programa em c++, é a base para tudo que iremos fazer daqui pra frente.
+Vamos iniciar nosso programa criando um arquivo de texto com a extensão `.cpp`. Vamos dar o nome para nosso arquivo de `primeiroCodigo.cpp`. O nome do arquivo não deve conter espaços entre as palavras nem acentuação, seguindo boas práticas de nomenclatura.
 
-Para importamos a biblioteca iremos utilizar o comando **#include**, no qual faz a importação das bibliotecas dentro do nosso sistema, seu código deverá ficar assim:
+Após criar o arquivo, abra-o com um editor de texto de sua preferência (eu usarei o Vim para esta introdução, mas sinta-se à vontade para escolher qualquer editor).
 
-```cpp
-#include <iostream>
+Feita a criação e abertura do arquivo, o primeiro passo é importar algumas bibliotecas para o funcionamento do código.
 
-```
-Você pode estar se perguntando o que seria esse tal de **iostream**, ele nada mais é do que um gerenciador de entrada e saída do seu programa (**I**|**O**), é com ele que podemos fazer todo o gerenciamento, de forma "automatica", do nosso programa, como por exemplo, uma saida de texto para o usuário informando uma mensagem de "olá". Claro que não se limita só a isso, mas sua principal função é garantir essa interação de usuário e máquina, caso contrário seu programa nunca irá funcionar.
+A primeira coisa que precisamos importar é a biblioteca `iostream`, que é essencial para o funcionamento do nosso programa em C++. Ela é a base para tudo o que faremos daqui para frente.
 
-Após a importação da nosso biblioteca de entra e saída (**iostream**), vamos fazer mais uma inclusão ao código, agora iremos definir o uso de uma biblioteca, que é a **std** (Standar Template Library), é uma bibliotexa padronizada de funções, que oferece ao desenvolver um conjunto de classes de uso genérico, facilitando o desenvolvimento.
-
-#### Por exemplo
-Sem essa biblioteca, um código simples de saída ficaria assim:
-
-```cpp
-std::cout << "Olá Mundo!";
-```
-Agora utilizando a biblioteca, podemos reduzir nossa escrita:
-
-```cpp
-
-cout << "Olá Mundo!";
-
-```
-Dessa forma, conseguirmos diminuir as chances de erros no programa, já que não precisaremos fazer essa inclusões, que se tornam chatas ao longo do tempo.
-
-Agora que já expliquei um pouco sobre sua importância, vamos adiciona-lá ao código.
-
+Para importar a biblioteca, usaremos o comando `#include`, que faz a inclusão das bibliotecas no nosso sistema. Seu código deverá ficar assim:
 
 ```cpp
 #include <iostream>
-
-using namespace std;
 ```
 
-Feita essas inclusões, vamos agora iniciar o programa, para isso iremos criar uma função chamada **main**, do tipo inteiro, pois precisamos sempres retornar algo ao sistema, e nesse caso por padrão o programa deve conter essa estrutura. O **main** é a principal parte do seu sistema, para desenvolvermos qualquer aplicação, sempre necessitaremos iniciá-lo, caso isso não seja feito, seu programa não irá funcionar, pois não existe nenhuma referência de instancimento, onde sua estrutura deve começar e terminar.
+Você pode estar se perguntando o que é esse tal de `iostream`. Ele nada mais é do que um gerenciador de entrada e saída do seu programa (I/O). É com ele que podemos fazer todo o gerenciamento, de forma "automática", do nosso programa. Por exemplo, podemos exibir uma mensagem de saída para o usuário, como "Olá, Mundo!". Claro que suas funcionalidades não se limitam a isso, mas sua principal função é garantir essa interação entre usuário e máquina. Sem ela, seu programa nunca funcionará.
+
+---
+
+## Usando a Biblioteca `std`
+
+Após a importação da nossa biblioteca de entrada e saída (`iostream`), vamos fazer mais uma inclusão ao código: definir o uso da biblioteca `std` (Standard Template Library). Essa biblioteca padronizada oferece ao desenvolvedor um conjunto de classes de uso genérico, facilitando o desenvolvimento.
+
+Por exemplo, sem essa biblioteca, um código simples de saída ficaria assim:
+
+```cpp
+std::cout << "Olá, Mundo!";
+```
+
+Agora, utilizando a biblioteca, podemos reduzir nossa escrita:
+
+```cpp
+cout << "Olá, Mundo!";
+```
+
+Dessa forma, conseguimos diminuir as chances de erros no programa, pois evitamos repetições desnecessárias, que podem se tornar cansativas ao longo do tempo.
+
+Agora que já expliquei um pouco sobre sua importância, vamos adicioná-la ao código:
 
 ```cpp
 #include <iostream>
 
 using namespace std;
-
-int main() {
-
-
-}
-
 ```
 
-Lembre-se que essa função precisa retornar alguma coisa, então vamos adicionar um **return** no código, essa resposta será zero (return 0):
+---
 
-~~~cpp
+## Criando a Função `main`
 
+Feitas essas inclusões, vamos agora iniciar o programa. Para isso, criaremos uma função chamada `main`, do tipo inteiro (`int`), pois sempre precisamos retornar algo ao sistema. Por padrão, todo programa em C++ deve conter essa estrutura. A função `main` é a principal parte do sistema. Para desenvolver qualquer aplicação, sempre precisaremos iniciá-la. Caso contrário, o programa não funcionará, pois não haverá referência de instância, ou seja, não saberá onde começar ou terminar.
+
+```cpp
 #include <iostream>
 
 using namespace std;
 
 int main() {
-
-return 0;
+    return 0;
 }
-~~~
+```
 
-Pronto, agora você já sabe qual é a estrutura básica de um programa em
-***c++***. Se você estiver utilizando linux, porderá rodar o código direto pelo
-terminal usando o seguindo comando:
+Lembre-se de que essa função precisa retornar algo, então adicionamos o comando `return 0;`.
+
+Pronto! Agora você já sabe qual é a estrutura básica de um programa em **C++**.
+
+Se estiver utilizando Linux, poderá rodar o código direto pelo terminal usando o seguinte comando:
 
 ```bash
 g++ -o nome_para_o_arquivo nome_do_arquivo.cpp
 ```
-O nome_para_o_arquivo é o programa que será criado para ser executado, já o nome_do_arquivo.cpp
-é o seu código.
 
-Depois é só executar usando:
+O `nome_para_o_arquivo` é o programa que será criado para ser executado, enquanto o `nome_do_arquivo.cpp` é o seu código-fonte.
 
-~~~bash
-./nome_para_o_arquivo
-
-~~~
-
-Se você fizer esse procedimento com o arquivo criado nessa introdução,
-provavelmente não aparecer nenhuma saída, pois não há nada para ser feito.
-Apenas estruturamos o projeto no formato de programação em ***c++***.
-
-# Variáveis
-Uma variável é um espaço separado pelo sistema dentro da memória **RAM**, esse
-espaço é temporário, já que fica alocado nessa parte do hardware. Para termos
-acesso a essas variáveis precisamos sempre indica-lás dentro do nosso código, o
-nome e o tipo dela.
-
-Como na maioria das linguagens o ***cpp*** também contém suas formas de
-armazenamento de informações.
-
-#### Os tipos de variáveis em c++
-
-Tipo | Tamanho
----- | ----
-int (16bits) | 2 bytes
-int (32bits) | 4 bytes
-char | 1 byte (caracteres)
-double | 8 bytes
-float | 4 bytes
-bool | 1 byte (true/false)
-unsigned shirt int | 2 bytes
-short int | 2 bytes
-unsigned long int | 4 bytes
-long int | 4 bytes
-unsigned int (16 bits) | 4 bytes
-string | variável (texto)
-
-As variáveis mais comuns de se utilizar quando se inicia em programação, são:
-
-* ***int*** - inteiro
-	* armazena valores como, 1, 2, 55 e assim por diante (ou seja somente números).
-* ***char*** - caracteres
-	* armazena valores como, a, b, c, e assim por diante (ou seja somente letras).
-* ***float*** - decimal
-	* armazena valores como, 1.2, 2.2, 25.510 e assim por diante (ou seja números com casas decimais).
-* ***double*** - decimal
-	* Muito parecido com o float, mas possui uma diferença bem importante, o double irá armazenar 
-	  valores com mais precisão, se tivermos algum valor que seu resultado seja 4,9999999999, o 
-		float irá aproximar o valor,	ficando 4.5, já double tenta manter o valor mais proximo 
-		ao calculado.
-* ***string*** - Textos
-	* armazena valores como, nomes, textos, etc... 
-
-Agora que já vimos os tipos de variáveis, vamos criar um código para exemplificar o uso de algumas delas.<br />
-Para isso crie um novo programa ***cpp***, irei chamar o meu de ***variaveis.cpp***, após criar o arquivo, iremos adicionar alguns tipos de variáveis:
-
-```cpp
-#include <iostream>
-
-using namespace std;
-
-int main() {
-	int inteiro;
-	char letra;
-	double decimal;
-	float decimal2;
-	bool verdadeiro_false;
-	string texto;
-	
-	return 0;
-
-}
-
-```
-
-Feito isto, agora precisamos informar um valor padrão, caso não façamos isso,
-sua variável tem o risco de ser iniciada com valores aleátorios, prejudicando seu
-desenvolvimento, baśicamente irá iniciar com "LIXO" de memória, para evitarmos
-alguns erros, iremos sempre indicar um valor padrão:
-
-
-```cpp
-#include <iostream>
-
-using namespace std;
-
-int main() {
-	int inteiro = 0;
-	char letra = 'c';
-	double decimal = 5.2;
-	float decimal2 = 5.2;
-	bool verdadeiro = true;
-	bool falso = false;
-	string texto = "Programação em cpp";
-
-	
-	return 0;
-
-}
-
-```
-
-A saída deverá sair parecida:
+Depois, execute o programa usando:
 
 ```bash
- 0
- c
- 5.2
- 5.2
- 1
- 0
- Programação
-
+./nome_para_o_arquivo
 ```
 
-Já que informamos os tipos, nomes e valores, vamos imprimir isso para vermos o
-que irá aparecer.  Para imprimir alguma saída precisamos usar o comando
-***cout***, como foi utilizado anteriormente, tente fazer sozinho, para ver o
-resultado.
+Se você fizer esse procedimento com o arquivo criado nesta introdução, provavelmente não aparecerá nenhuma saída, pois não há nada para ser feito. Apenas estruturamos o projeto no formato de programação em **C++**.
+
+---
+
+## Variáveis
+
+Uma variável é um espaço reservado pelo sistema na memória RAM. Esse espaço é temporário, pois fica alocado nessa parte do hardware. Para acessar essas variáveis, precisamos sempre declará-las no código, informando seu nome e tipo.
+
+Assim como na maioria das linguagens, o **C++** também possui seus tipos de variáveis.
+
+### Tipos de Variáveis em C++
+
+| Tipo                | Tamanho        |
+|---------------------|----------------|
+| `int` (16 bits)     | 2 bytes        |
+| `int` (32 bits)     | 4 bytes        |
+| `char`              | 1 byte         |
+| `double`            | 8 bytes        |
+| `float`             | 4 bytes        |
+| `bool`              | 1 byte (true/false) |
+| `unsigned short int`| 2 bytes        |
+| `short int`         | 2 bytes        |
+| `unsigned long int` | 4 bytes        |
+| `long int`          | 4 bytes        |
+| `unsigned int`      | 4 bytes        |
+| `string`            | Variável (texto) |
+
+As variáveis mais comuns para quem está começando são:
+
+- **`int`**: Armazena valores inteiros, como `1`, `2`, `55`, etc.
+- **`char`**: Armazena caracteres, como `'a'`, `'b'`, `'c'`, etc.
+- **`float`**: Armazena números decimais, como `1.2`, `2.2`, `25.510`, etc.
+- **`double`**: Muito parecido com o `float`, mas com maior precisão. Por exemplo, se tivermos um valor como `4.9999999999`, o `float` irá aproximá-lo para `4.5`, enquanto o `double` tentará manter o valor mais próximo ao calculado.
+- **`string`**: Armazena textos, como nomes, frases, etc.
+
+Agora que vimos os tipos de variáveis, vamos criar um código para exemplificar o uso de algumas delas.
+
+Crie um novo programa em **C++**, por exemplo, `variaveis.cpp`. Após criar o arquivo, adicione alguns tipos de variáveis:
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int inteiro;
+    char letra;
+    double decimal;
+    float decimal2;
+    bool verdadeiro_false;
+    string texto;
+
+    return 0;
+}
+```
+
+Feito isso, agora precisamos atribuir valores padrão às variáveis. Caso contrário, elas podem ser inicializadas com valores aleatórios (lixo de memória), prejudicando o desenvolvimento. Para evitar erros, sempre atribuiremos valores iniciais:
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int inteiro = 0;
+    char letra = 'c';
+    double decimal = 5.2;
+    float decimal2 = 5.2;
+    bool verdadeiro = true;
+    bool falso = false;
+    string texto = "Programação em C++";
+
+    return 0;
+}
+```
+
+A saída deve ser algo como:
+
+```
+0
+c
+5.2
+5.2
+1
+0
+Programação em C++
+```
+
+Já que informamos os tipos, nomes e valores, vamos imprimir isso para ver o que aparecerá. Para imprimir uma saída, precisamos usar o comando `cout`, como foi utilizado anteriormente. Tente fazer isso sozinho para ver o resultado.
 
 Se você conseguiu, vamos continuar.
 
-Você deve ter percebido que o valor booleano (bool) foi imprimido na tela com o
-digíto um. Isso porque, ***true*** corresponde a um, e ***false*** a zero.
+Você deve ter percebido que o valor booleano (`bool`) foi impresso na tela como o dígito `1`. Isso ocorre porque `true` corresponde a `1`, e `false` a `0`.
 
+---
 
-# Recebendo valores digitados pelo usuário
+## Recebendo Valores Digitados pelo Usuário
 
-Agora iremos receber algumas informaçãoes digitadas pelo usuário, será algo
-simples, mas muito importante para podermos desenvolver aplicações mais
-complexas futuramente. 
+Agora iremos receber informações digitadas pelo usuário. Será algo simples, mas muito importante para desenvolver aplicações mais complexas futuramente.
 
-Vamos criar um sistema que solicitará ao usuário, nome, idade, peso e altura.
+Vamos criar um sistema que solicitará ao usuário o nome, idade, peso e altura.
 
 Utilizando os tipos de variáveis:
->***nome*** vai ser do tipo string<br />
->***idade*** vai ser do tipo inteiro<br />
->***peso*** vai ser do tipo float<br />
->***altura*** vai ser do tipo float<br />
->Obs: Comando de entrada
-> * cout << "Imprime uma mensagem ao usuário";
-> * cin >> Recebe mensagem do usuário;
 
-Agora que determinamos os tipos de variáveis que utilizaremos, vamos iniciar o
-desenvolvimento, crie seu programa e mão na massa.
+- `nome`: Será do tipo `string`.
+- `idade`: Será do tipo `int`.
+- `peso`: Será do tipo `float`.
+- `altura`: Será do tipo `float`.
+
+**Obs:** Comandos de entrada e saída:
+
+```cpp
+cout << "Imprime uma mensagem ao usuário";
+cin >> Recebe mensagem do usuário;
+```
+
+Agora que determinamos os tipos de variáveis que utilizaremos, vamos iniciar o desenvolvimento. Crie seu programa e mãos à obra!
 
 ```cpp
 #include <iostream>
@@ -249,86 +221,70 @@ desenvolvimento, crie seu programa e mão na massa.
 using namespace std;
 
 int main() {
-	string nome;
-	int idade = 0;
-	float peso = 0.0;
-	float altura = 0.0;
+    string nome;
+    int idade = 0;
+    float peso = 0.0;
+    float altura = 0.0;
 
-	//Agora vamos criar a interção com o usuário
-	cout << "Digite seu nome: ";
-	cin >> nome;
-	cout << "Digite sua idade: ";
-	cin >> idade;
-	cout << "Digite seu peso: ";
-	cin >> peso;
-	cout << "Digite sua altura: ";
-	cin >> altura;
+    // Agora vamos criar a interação com o usuário
+    cout << "Digite seu nome: ";
+    cin >> nome;
+    cout << "Digite sua idade: ";
+    cin >> idade;
+    cout << "Digite seu peso: ";
+    cin >> peso;
+    cout << "Digite sua altura: ";
+    cin >> altura;
 
-	return 0;
+    return 0;
 }
-
 ```
 
-Já coletamos as informações, agora vamos mostrar elas ao usuário.
-Ainda dentro do seu programa, após toda a coleta de dados, vamos adicionar a
-saída.
+Já coletamos as informações. Agora vamos mostrá-las ao usuário. Ainda dentro do seu programa, após toda a coleta de dados, vamos adicionar a saída.
 
-Vamos concatenar as variáveis numa mensagem, é simples, para realizar esse
-procedimento é necessario utilizarmos no ***cout*** nosso comando de saída, o
-simbolo ***<<*** após a sua resposta, ficará assim:
+Vamos concatenar as variáveis numa mensagem. Para realizar esse procedimento, é necessário utilizarmos no `cout` nosso comando de saída, o símbolo `<<`, seguido da variável e, opcionalmente, do comando de quebra de linha `endl`.
 
-> cout << "Sua mensagem aqui " << variável aqui << endl;<br />
-
-O ***endl*** é um comando de quebra de linha, você pode utilizar aspas duplas
-barra n (**\n**) no lugar dele, terá o mesmo efeito, ou apenas utilizar aspas duplas (" "), porém apenas fechará o código.
+O `endl` é um comando de quebra de linha. Você pode usar `\n` no lugar dele, que terá o mesmo efeito.
 
 ```cpp
-
-//mostrando os valores inserido ao usuário
+// Mostrando os valores inseridos pelo usuário
 cout << "Nome: " << nome << endl;
 cout << "Idade: " << idade << endl;
 cout << "Peso: " << peso << endl;
 cout << "Altura: " << altura << endl;
-
 ```
 
 Só rodar o seu código, e você verá as mensagens na sua tela.
 
 O código completo deve ficar assim:
 
-
 ```cpp
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	string nome;
-	int idade = 0;
-	float peso = 0.0;
-	float altura = 0.0;
+    string nome;
+    int idade = 0;
+    float peso = 0.0;
+    float altura = 0.0;
 
-	//Agora vamos criar a interção com o usuário
-	cout << "Digite seu nome: ";
-	cin >> nome;
-	cout << "Digite sua idade: ";
-	cin >> idade;
-	cout << "Digite seu peso: ";
-	cin >> peso;
-	cout << "Digite sua altura: ";
-	cin >> altura;
+    // Agora vamos criar a interação com o usuário
+    cout << "Digite seu nome: ";
+    cin >> nome;
+    cout << "Digite sua idade: ";
+    cin >> idade;
+    cout << "Digite seu peso: ";
+    cin >> peso;
+    cout << "Digite sua altura: ";
+    cin >> altura;
 
-	//mostrando os valores inserido ao usuário
-	cout << "Nome: " << nome << endl;
-	cout << "Idade: " << idade << endl;
-	cout << "Peso: " << peso << endl;
-	cout << "Altura: " << altura << endl;
+    // Mostrando os valores inseridos pelo usuário
+    cout << "Nome: " << nome << endl;
+    cout << "Idade: " << idade << endl;
+    cout << "Peso: " << peso << endl;
+    cout << "Altura: " << altura << endl;
 
-	return 0;
+    return 0;
 }
-
 ```
-
-
-
-
