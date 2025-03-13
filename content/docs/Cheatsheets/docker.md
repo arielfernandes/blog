@@ -1,4 +1,11 @@
-# 📋 Docker
+---
+title : Docker
+author : Ariel Fernandes
+date : 2025-03-13
+draft : false
+tags : ["docker"]
+type : posts
+---
 
 ## Introdução
 O Docker é uma plataforma de contêineres que permite criar, implantar e executar aplicativos em ambientes isolados chamados **contêineres**. Este cheatsheet aborda os principais comandos e conceitos do Docker.

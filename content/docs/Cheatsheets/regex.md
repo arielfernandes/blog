@@ -1,4 +1,11 @@
-# 📋 Regex (Expressões Regulares)
+---
+title : Regex (Expressões Regulares)
+author : Ariel Fernandes
+date : 2025-03-13
+draft : false
+tags : ["regex"]
+type : posts
+---
 
 ## Introdução
 As Expressões Regulares (Regex) são padrões usados para combinar sequências de caracteres em strings. Elas são amplamente utilizadas em linguagens de programação, ferramentas de busca e substituição, validação de dados, etc.
@@ -79,19 +86,19 @@ As Expressões Regulares (Regex) são padrões usados para combinar sequências 
 ## Exemplos Práticos
 
 ### Validação de Emails
-```regex
+```bash
 ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
 ```
 - Matches: `example@example.com`, `user.name+tag+sorting@gmail.com`
 
 ### Validação de Números de Telefone
-```regex
+```bash
 ^\+?[0-9]{1,3}?[-.\s]?\(?\d{1,4}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$
 ```
 - Matches: `+1-800-555-5555`, `+55 (11) 98765-4321`
 
 ### Extrair URLs
-```regex
+```bash
 https?:\/\/[^\s/$.?#].[^\s]*
 ```
 - Matches: `http://example.com`, `https://www.site.com/path`
@@ -112,4 +119,3 @@ https?:\/\/[^\s/$.?#].[^\s]*
 - Regex pode ser poderoso, mas também complexo. Prefira soluções simples sempre que possível.
 
 ---
-
