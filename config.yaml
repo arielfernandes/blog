@@ -33,9 +33,7 @@ markup:
 #   weight: 2
 
 menu:
-  before:
-  - name: Posts
-    url: /posts
+  # before: []
   after:
     - name: "Github"
       url: "https://github.com/arielfernandes"
