@@ -1,7 +1,7 @@
 ---
 title: "Comandos git"
 author: Ariel Fernandes
-date: 2022-09-29
+date: 2025-04-02
 draft: false
 tags: ["Git"]
 type: "posts"
