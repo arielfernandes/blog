@@ -10,5 +10,5 @@ A criação deste blog pessoal, é para poder compartilhar conhecimentos adquiri
 
 Tentando explicar alguns conceitos do mundo da programação e desenvolvimento de uma forma simples.
 
-Abordarei assuntos voltados a sistemas operacionais, desenvolvimento, microcontroladores e embarcados.
+Abordarei assuntos voltados a sistemas operacionais, desenvolvimento, microcontroladores e embarcados!
 
