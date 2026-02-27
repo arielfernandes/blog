@@ -11,7 +11,7 @@ type: "posts"
 ---
 
 
-# Raspberry Pi Pico no Arch: Seu Primeiro Blink
+# Raspberry Pi Pico no Arch Linux
 
 ## 1. Toolchain de Compilação Cruzada
 
@@ -110,6 +110,8 @@ sudo sync
 ## Validação do Deploy
 
 O provisionamento está concluído. O microcontrolador executará o *reboot* automaticamente e iniciará a leitura do binário na memória Flash. A alternância contínua de estado lógico do LED *onboard* (GPIO 25) confirma a integridade ponta a ponta da *toolchain* do Arch Linux e a operação do hardware.
+
+{{< figure src="/gif/blink_pico.gif" alt="Blink Pico" width="300px" >}}
 
 ## Finalização
 Após a cópia, o Pico reiniciará automaticamente e executará o programa. Se desejar, você pode desmontar manualmente a unidade:
