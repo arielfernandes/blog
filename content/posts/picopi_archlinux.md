@@ -10,83 +10,109 @@ tags: ["raspberry-pi-pico", "rp2040", "arch-linux", "cpp", "cmake"]
 type: "posts"
 ---
 
-Protocolo Oficial: Deploy do Exemplo Blink (Pico SDK) no Arch Linux
-1. Toolchain de Compilação Cruzada
+
+# Raspberry Pi Pico no Arch: Seu Primeiro Blink
+
+## 1. Toolchain de Compilação Cruzada
 
 Instalação dos utilitários do sistema operacional e compiladores ARM nativos do Arch Linux.
-Bash
 
+```bash
 sudo pacman -Syu --needed cmake arm-none-eabi-gcc arm-none-eabi-newlib arm-none-eabi-gdb git python base-devel usbutils
+```
 
-2. Provisionamento do SDK (Framework Base)
+## 2. Provisionamento do SDK (Framework Base)
 
-Clonagem das bibliotecas de hardware no espaço do usuário e injeção do caminho no shell.
-Bash
+Clonagem das bibliotecas de hardware no espaço do usuário e configuração do caminho no shell.
 
+```bash
 mkdir -p ~/projetos/pico
 cd ~/projetos/pico
 git clone https://github.com/raspberrypi/pico-sdk.git
 cd pico-sdk
 git submodule update --init
 
-echo "export PICO_SDK_PATH=$HOME/projetos/pico/pico-sdk" >> ~/.bashrc
+echo "export pico_sdk_path=$home/projetos/pico/pico-sdk" >> ~/.bashrc
 source ~/.bashrc
 
-3. Integração do Repositório de Exemplos
+# ou
+# echo "export pico_sdk_path=$home/projetos/pico/pico-sdk" >> ~/.zshrc
+# source ~/.zshrc
+
+```
+
+## 3. Integração do Repositório de Exemplos
 
 Download da biblioteca oficial de implementações de referência.
-Bash
 
+```bash
 cd ~/projetos/pico
 git clone https://github.com/raspberrypi/pico-examples.git
+```
 
-4. Estruturação da Árvore de Build (Root Context)
+## 4. Estruturação da Árvore de Build (Root Context)
 
 A execução do cmake deve ocorrer obrigatoriamente na raiz do repositório pico-examples. Isso garante que as macros do SDK (pico_add_extra_outputs) sejam lidas corretamente pelo compilador antes de atingir os subprojetos.
-Bash
 
+```bash
 cd ~/projetos/pico/pico-examples
 mkdir -p build && cd build
 cmake ..
+```
 
-5. Compilação Direcionada (Módulo Blink)
+## 5. Compilação Direcionada (Módulo Blink)
 
 Com o mapeamento de dependências estabelecido na raiz, compila-se exclusivamente o binário alvo utilizando múltiplos núcleos do processador para otimização de tempo.
-Bash
 
+```bash
 cd blink
 make -j$(nproc)
+```
 
-6. Flash (Deploy no Hardware)
+## 6. Montagem e Cópia (Deploy no Hardware)
 
-Transferência do arquivo de firmware .uf2 para a memória da placa.
+### Conectando o Raspberry Pi Pico
 
-A. Ativação do Bootrom (Hardware)
+O dispositivo aparecerá como uma unidade de armazenamento removível (geralmente montada automaticamente em distribuições modernas).
 
-    Desconecte o cabo USB do Pico.
+### Verificação e Montagem (se necessário)
 
-    Mantenha pressionado o botão BOOTSEL.
+Caso o Pico não monte automaticamente, verifique se o sistema o reconheceu:
 
-    Conecte o cabo USB.
+```bash
+lsblk | grep sda
+```
 
-    Solte o botão após 2 segundos.
+Se aparecer como /dev/sda1 (ou similar), monte manualmente:
 
-    Verifique o identificador do bloco montado (ex: sda1) executando lsblk.
-
-B. Montagem e Cópia (Software)
-Bash
-
-# Criação do ponto de montagem
+```bash
+# Criar ponto de montagem (se não existir)
 sudo mkdir -p /mnt/pico
 
-# Montagem da partição FAT16
+# Montar o dispositivo
 sudo mount /dev/sda1 /mnt/pico
+```
 
-# Transferência do binário
-sudo cp blink.uf2 /mnt/pico/
+### Transferência do Binário
 
-# Sincronização forçada (Garante a gravação antes do auto-reboot)
+```bash
+# Verificar se o arquivo .uf2 foi gerado corretamente
+ls -la ~/projetos/pico/pico-examples/build/blink/blink.uf2
+
+# Copiar o arquivo para o Pico
+sudo cp ~/projetos/pico/pico-examples/build/blink/blink.uf2 /mnt/pico/
+
+# Garantir que a gravação foi concluída
 sudo sync
+```
 
-**Validação do Deploy:**
+
+## Validação do Deploy
+
 O provisionamento está concluído. O microcontrolador executará o *reboot* automaticamente e iniciará a leitura do binário na memória Flash. A alternância contínua de estado lógico do LED *onboard* (GPIO 25) confirma a integridade ponta a ponta da *toolchain* do Arch Linux e a operação do hardware.
+
+## Finalização
+Após a cópia, o Pico reiniciará automaticamente e executará o programa. Se desejar, você pode desmontar manualmente a unidade:
+
+```bash
+sudo umount /mnt/pico
