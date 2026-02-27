@@ -113,6 +113,7 @@ O provisionamento está concluído. O microcontrolador executará o *reboot* aut
 
 {{< figure src="/gif/pico_pi.gif" width="300px" caption="Blink no Raspberry Pi Pico" >}}
 
+
 ## Finalização
 Após a cópia, o Pico reiniciará automaticamente e executará o programa. Se desejar, você pode desmontar manualmente a unidade:
 
