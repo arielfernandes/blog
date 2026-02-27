@@ -111,7 +111,7 @@ sudo sync
 
 O provisionamento está concluído. O microcontrolador executará o *reboot* automaticamente e iniciará a leitura do binário na memória Flash. A alternância contínua de estado lógico do LED *onboard* (GPIO 25) confirma a integridade ponta a ponta da *toolchain* do Arch Linux e a operação do hardware.
 
-{{< figure src="/gif/blink_pico.gif" alt="Blink Pico" width="300px" >}}
+{{< figure src="/gif/pico_pi.gif" width="300px" caption="Blink no Raspberry Pi Pico" >}}
 
 ## Finalização
 Após a cópia, o Pico reiniciará automaticamente e executará o programa. Se desejar, você pode desmontar manualmente a unidade:
