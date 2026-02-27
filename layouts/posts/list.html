@@ -1,0 +1,33 @@
+{{ define "main" }}
+<section class="posts-section">
+    <h1 class="posts-section__title">{{ .Title }}</h1>
+
+    <ul class="posts-list" style="padding: 0; list-style: none;">
+        {{ range .Pages }}
+            <li class="post-item" style="margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem;">
+
+                <h2 style="margin: 0 0 0.5rem 0; font-size: 1.5rem;">
+                    <a href="{{ .Permalink }}" style="text-decoration: none;">
+                        {{ .Title | markdownify }}
+                    </a>
+                </h2>
+
+                <div style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1rem;">
+                    <strong>{{ .Date.Format "January 02, 2026" }}</strong>
+
+                    {{ if .Params.tags }}
+                        <span style="margin: 0 5px;">|</span>
+                        {{ range $index, $tag := .Params.tags }}
+                            {{ if $index }}, {{ end }}
+                            <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}" style="text-decoration: none; color: inherit;">
+                                {{ $tag }}
+                            </a>
+                        {{ end }}
+                    {{ end }}
+                </div>
+
+                </li>
+        {{ end }}
+    </ul>
+</section>
+{{ end }}
