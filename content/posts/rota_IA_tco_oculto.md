@@ -2,7 +2,7 @@
 title: "A Correção de Rota da IA e o TCO Oculto na Engenharia de Software"
 author: Ariel Fernandes
 date: 2026-05-27
-draft: true
+draft: false
 tags: ["IA Generativa", "TCO", "Engenharia de Software", "Gartner", "Microsoft", "Hype Cycle"]
 type: "posts"
 ---
