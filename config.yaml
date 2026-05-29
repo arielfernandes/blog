@@ -1,6 +1,6 @@
 # hugo server --minify --themesDir ../.. --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
-baseURL: https://arielf.xyz/
+baseURL: https://arielf.site/
 languageCode: pt-br
 title: Ariel Fernandes
 theme: hugo-book
