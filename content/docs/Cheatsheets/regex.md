@@ -110,6 +110,7 @@ https?:\/\/[^\s/$.?#].[^\s]*
 - [Regex101](https://regex101.com/) - Testador interativo de regex com explicações detalhadas.
 - [RegExr](https://regexr.com/) - Outro testador interativo com tutoriais.
 - [Debuggex](https://www.debuggex.com/) - Visualizador gráfico de regex.
+- [Pythonium](https://pythonium.net/regex) - Testador e visualizador gráfico de regex para Python.
 
 ---
 
